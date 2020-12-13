@@ -4,7 +4,7 @@ David's build of dwm
 
 dwm is an extremely fast, small, and dynamic window manager for X.
 
-BTW, my scripts are in [this repo](https://github.com/theniceboy/scripts).
+BTW, TheCW's scripts are in [this repo](https://github.com/theniceboy/scripts).
 
 Requirements
 ------------
