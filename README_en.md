@@ -1,36 +1,37 @@
-# 重要声明
+# Important statement
 --------
-此仓库fork来自theniceboy's [dwm](https://github.com/theniceboy/dwm)
+This repositories fork from theniceboy's [dwm](https://github.com/theniceboy/dwm)
 
- dwm 构建
+ Build of dwm
 ============================
-[English Ver.](./README_en.md)
+[中文版](./README.md)
 
-dwm 是一个非常快速, 小巧并使用动态管理窗口的窗口管理器
+dwm is an extremely fast, small, and dynamic window manager for X.
 
-顺便说一句, 我的脚本都存放在 [此仓库](https://github.com/KuringMIN/scripts) 中
+BTW, My scripts are in [this repo](https://github.com/KuringMIN/scripts).
 
-要求
+Requirements
 ------------
-构建 dwm 前, 你需要有 `Xlib` 头文件
 In order to build dwm you need the Xlib header files.
 
 
-安装
+Installation
 ------------
-编辑 `config.mk` 来匹配你的本地设置 (dwm 将默认安装在 /usr/local)
+Edit config.mk to match your local setup (dwm is installed into
+the /usr/local namespace by default).
 
-之后通过以下命令安装 dwm (必须使用 root 用户):
+Afterwards enter the following command to build and install dwm (if
+necessary as root):
 
     make clean install
 
-应用的自定义补丁
+Patches applied
 ---------------
 - [dwm-alpha-20180613-b69c870.diff](https://dwm.suckless.org/patches/alpha/)
 - [dwm-autostart-20161205-bb3bd6f.diff](https://dwm.suckless.org/patches/autostart/)
 - [dwm-awesomebar-20191003-80e2a76.diff](https://dwm.suckless.org/patches/awesomebar/)
 - [dwm-fullscreen-6.2.diff](https://dwm.suckless.org/patches/fullscreen/)
-- [dwm-hide-and-restore.diff](https://github.com/theniceboy/dwm-hide-and-restore-win.diff) (theniceboy写的自定义补丁)
+- [dwm-hide-and-restore.diff](https://github.com/theniceboy/dwm-hide-and-restore-win.diff) (a custom patch by theniceboy)
 - [dwm-hide_vacant_tags-6.2.diff](https://dwm.suckless.org/patches/hide_vacant_tags/)
 - [dwm-noborder-6.2.diff](https://dwm.suckless.org/patches/noborder/)
 - [dwm-pertag-20170513-ceac8c9.diff](https://dwm.suckless.org/patches/pertag/)
@@ -40,27 +41,27 @@ In order to build dwm you need the Xlib header files.
 - [dwm-vanitygaps-20190508-6.2.diff](https://dwm.suckless.org/patches/vanitygaps/)
 
 
-运行 dwm
+Running dwm
 -----------
-将以下行添加到 .xinitrc 中来通过 `startx` 启动 dwm:
+Add the following line to your .xinitrc to start dwm using startx:
 
     exec dwm
 
-如果你需要使用多显示器启动 dwm, 你需要设置屏幕变量, 以下是一个例子:
+In order to connect dwm to a specific display, make sure that
+the DISPLAY environment variable is set correctly, e.g.:
 
     DISPLAY=foo.bar:1 exec dwm
 
-(这样将会启动 dwm 并显示在显示器一上)
+(This will start dwm on display :1 of the host foo.bar.)
 
-如果你想自定义你的状态栏, 你可以在 .xinitrc 添加行, 以下是一个例子:
+In order to display status info in the bar, you can do something
+like this in your .xinitrc:
 
     while xsetroot -name "`date` `uptime | sed 's/.*,//'`"
     do
     	sleep 1
     done &
     exec dwm
-
-
 
 ## 快捷键
 |    主键   |       次键       |       功能       |                 说明                 |
@@ -122,8 +123,5 @@ In order to build dwm you need the Xlib header files.
 |    mod    |         9        |         8        |              打开8标签页             |
 |  mod+ctrl |         q        |       quit       |                退出dwm               |
 
-
-## 特别鸣谢
+## Special thanks
 [theniceboy](https://github.com/theniceboy)
-
-
