@@ -101,11 +101,14 @@ static const char *suspendcmd[]  = { "/home/david/scripts/suspend.sh", NULL };
 
 static const char *screenshotcmd[] = { "flameshot", "gui", NULL };
 
+static const char *touchpadcmd[]  = { "/home/david/scripts/on-down-touchpad.sh", NULL };
+
 static Key keys[] = {
 	/* modifier            key                      function        argument */
 	{ MODKEY,              XK_s,                    spawn,          {.v = dmenucmd } },
 	{ MODKEY,              XK_Return,               spawn,          {.v = termcmd } },
 	{ MODKEY,              XK_c,                    spawn,          {.v = browsercmd } },
+	{ MODKEY,              XK_p,                    spawn,          {.v = touchpadcmd } },
 	{ MODKEY|ShiftMask,    XK_w,                    spawn,          {.v = setqwertycmd } },
 	{ MODKEY|ShiftMask,    XK_m,                    spawn,          {.v = setcolemakcmd } },
 	{ MODKEY|ShiftMask,    XK_p,                    spawn,          {.v = suspendcmd } },

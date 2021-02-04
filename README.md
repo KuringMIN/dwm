@@ -68,6 +68,7 @@ In order to build dwm you need the Xlib header files.
 |    mod    |         s        |     dmenucmd     |               打开dmenu              |
 |    mod    |       enter      |      termcmd     |               打开终端               |
 |    mod    |         c        |    browsercmd    |              打开浏览器              |
+|    mod    |         p        |    touchpadcmd   |          打开或者关闭触摸板          |
 | mod+shift |         w        |   setqwertycmd   |            设置qwerty键盘            |
 | mod+shift |         m        |   setcolemakcmd  |            设置colemak键盘           |
 | mod+shift |         p        |    suspendcmd    |                 熄屏                 |
