@@ -85,23 +85,23 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char *browsercmd[]  = { "google-chrome-stable", NULL };
 
-static const char *upvol[]   = { "/home/david/scripts/vol-up.sh",  NULL };
-static const char *downvol[] = { "/home/david/scripts/vol-down.sh",  NULL };
-static const char *mutevol[] = { "/home/david/scripts/vol-toggle.sh",  NULL };
+static const char *upvol[]   = { "/home/kuring/scripts/vol-up.sh",  NULL };
+static const char *downvol[] = { "/home/kuring/scripts/vol-down.sh",  NULL };
+static const char *mutevol[] = { "/home/kuring/scripts/vol-toggle.sh",  NULL };
 
-static const char *wpcmd[]  = { "/home/david/scripts/wp-change.sh", NULL };
-static const char *sktogglecmd[]  = { "/home/david/scripts/sck-tog.sh", NULL };
+static const char *wpcmd[]  = { "/home/kuring/scripts/wp-change.sh", NULL };
+static const char *sktogglecmd[]  = { "/home/kuring/scripts/sck-tog.sh", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "80x24", NULL };
 
-static const char *setcolemakcmd[]  = { "/home/david/scripts/setxmodmap-colemak.sh", NULL };
-static const char *setqwertycmd[]  = { "/home/david/scripts/setxmodmap-qwerty.sh", NULL };
+static const char *setcolemakcmd[]  = { "/home/kuring/scripts/setxmodmap-colemak.sh", NULL };
+static const char *setqwertycmd[]  = { "/home/kuring/scripts/setxmodmap-qwerty.sh", NULL };
 
-static const char *suspendcmd[]  = { "/home/david/scripts/suspend.sh", NULL };
+static const char *suspendcmd[]  = { "/home/kuring/scripts/suspend.sh", NULL };
 
 static const char *screenshotcmd[] = { "flameshot", "gui", NULL };
 
-static const char *touchpadcmd[]  = { "/home/david/scripts/on-down-touchpad.sh", NULL };
+static const char *touchpadcmd[]  = { "/home/kuring/scripts/on-down-touchpad.sh", NULL };
 
 static Key keys[] = {
 	/* modifier            key                      function        argument */
